@@ -1,1 +1,184 @@
-h1 {background-color: green;}
+* {box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+  }
+
+body {direction: rtl;
+      text-align: right;
+      line-height: 1;
+      background: #fff url(/images/header_bg.png) repeat-x center top;
+      padding-bottom: 38px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+#form-main-container {display: block;
+                }
+
+#container {width: 900px;
+            margin: 0 auto;
+            padding-bottom: 30px;
+           }
+
+#header {width: 100%;
+         height: 105px;
+         position: relative;
+         display: block;
+         font-family: Arial, Helvetica, sans-serif;
+         background: #fff url(/images/header_bg.png) repeat-x center top;
+         background-image: url(/images/header_bg.png);
+         background-position-x: center;
+         background-position-y: top;
+         background-size: initial;
+         background-repeat: repeat-x;
+        }
+
+#header > a.logo {display: block;
+                  width: 142px;
+                  height: 93px;
+                  position: absolute;
+                  bottom: -20px;
+                  right: -8px;
+                  background: url(/images/paz_logo.png) no-repeat;
+                  cursor: pointer;
+                  outline: none;
+                 }
+
+#header #dd {display: inline-block;
+                       width: 19px;
+                       height: 19px;
+                       position: absolute;
+                       left: 5px;
+                       top: 20px;
+                       background: url(/images/search_button.png);
+                       border: black;
+    }
+
+#header #search-box .input-search-box #input-search-box input {position: relative;
+                                                               top: 2px;
+                                                               right: 4px;
+                                                               width: 126px;
+                                                               background: transparent;
+                                                               border: 0 none;
+    }
+
+input, textarea, select {font-family: arial;
+                         font-size: 12px;
+    }
+
+#li-home {width: 17px;
+    }
+
+.li-in-nav {width: 4px;
+            height: 21px;
+            background: url(/images/menu_sep.png) no-repeat 0 0px;
+            margin: 0 4.1px;
+            display: block;
+            
+            
+    }
+
+nav ul, nav li {list-style-type: none;
+    }
+
+nav a {text-decoration: none;}
+
+nav  {display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      position: absolute;
+      top: 60px;
+      align-items: center;
+      text-align: center;
+
+      /* width: 757px; */
+
+    
+    }
+
+#header #mainMenu {float: right;
+                   position: relative;
+                   display: block;
+                   margin-right: 150px;
+    }
+
+
+input {text-rendering: auto;
+       color: black;
+       letter-spacing: normal;
+       word-spacing: normal;
+       text-transform: none;
+       text-indent: 0;
+       text-shadow: none;
+       display: inline-block;
+       text-align: start;
+       cursor: text;
+       font: 400 13.3333px Arial;
+       font-style: normal;
+       font-weight: 400;
+       font-stretch: normal;
+       line-height: normal;
+       position: absolute;
+       right: 730px;
+       top: 20px;
+    }
+
+
+nav > ul li {
+    display: none;
+    }
+
+.li-in-nav {display: inline;
+    }
+
+a span {cursor: pointer;}
+
+
+ul, ol, li {
+
+    list-style-type: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+    }
+
+#header #mainMenu {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    }
+
+nav #mainMenu li a {
+    display: inline-block;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    height: 100%;
+    }
+
+nav span {font-size: 15px;
+          color: #fff;
+          font-weight: bold;
+          cursor: pointer;
+          height: 100%;
+          white-space: nowrap;
+          text-align: center;
+    }
+
+nav div a {
+    /* width: 150px;
+    height: 150x;
+    background-color: red;
+    display: block;
+     */
+                              width: 17px;
+                              height: 15px;
+                              background: url(/images/menu_home.png) no-repeat;
+                              display: block;
+                              position: absolute;
+                              bottom: -50px;
+                              right: -18px;
+    }
