@@ -72,10 +72,13 @@ font-stretch: normal;
      }
  
  
- nav ul {display: flex;
-         flex-direction: row;
+ nav > ul.flex-ul {display: flex;
+                 flex-direction: row;
      }
  
+nav > .flex-ul .dropdown-content {display: flex;
+                                  flex-direction: column;
+     }
  
  /*
      .li-in-nav {width: 4px;
