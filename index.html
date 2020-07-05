@@ -1,99 +1,111 @@
 <html>
-<link rel="stylesheet" href="lib\style.css">
+    <head>
+        <link rel="stylesheet" href="lib\style.css">
+        <title>פז</title>
+    </head>
 
-</html>
-
-<body>
-    <form id="form-main-container">
-        <div id="container">
-            <div id="header">
-                <a class="logo" href="https://www.paz.co.il" alt="paz logo"></a>
-                <div id="search-box" class="search-box">
-                    <div class="input-search">
-                        <input name="input-search-box" type="text" value="רשום מילות חיפוש" id="src-box"
-                            onfocus="this.value = ''" onblur="resetSearch()">
+    <body>
+        <form id="form-main-container">
+            <div id="container">
+                <div id="header">
+                    <div class="first-row">
+                        <a class="logo" href="https://www.paz.co.il" alt="paz logo"></a>
+                        <div id="search-box" class="search-box">
+                            <div class="input-search">English</div>
+                                <input name="input-search-box" type="text" placeholder="רשום מילות חיפוש" id="src-box">
+                            <a id="dd" href="#"></a>
+                        </div>
                     </div>
-                    <a id="dd" href="#"></a>
+                    <div class="second-row">
+                        <nav>
+                            <ul class="flex-ul">
+                                <li class="dropdown"><a href="#"><img src="images/menu_home.png" alt="אתר הבית"></a>
+                                </li>
+
+                                <li class="li-in-nav"></li>
+
+                                <li class="dropdown"><a id="about" href="#">אודות</a>
+                                    <div class="dropdown-content about1">
+                                        <a href="#">אודות</a>
+                                        <a href="#">היסטוריה</a>
+                                        <a href="#">חזון וערכים</a>
+                                        <a href="#">מבנה הקבוצה</a>
+                                        <a href="#">חברי הדירקטוריון</a>
+                                        <a href="#">הנהלת הקבוצה</a>
+                                        <a href="#">פרסים והוקרה</a>
+                                    </div>
+                                </li>
+
+                                <li class="li-in-nav"></li>
+
+                                <li class="dropdown"><a href="#">חטיבות</a>
+                                    <div class="dropdown-content">
+                                        <a href="#">חטיבות</a>
+                                        <a href="#">קמעונאות ומסחר</a>
+                                        <a href="#">תעשיות ושירותים</a>
+                                        <a href="#">זיקוק</a>
+                                    </div>
+                                </li>
+
+                                <li class="li-in-nav"></li>
+
+                                <li class="dropdown"><a href="#">אחריות תאגידית</a>
+                                    <div class="dropdown-content">
+                                        <a href="#">אחריות תאגידית</a>
+                                        <a href="#">הקוד האתי</a>
+                                        <a href="#">מעורבות חברתית</a>
+                                        <a href="#">נגישות</a>
+                                        <a href="#">איכות הסביבה ובטיחות</a>
+                                        <a href="#">דירוג מעלה</a>
+                                    </div>
+                                </li>
+
+                                <li class="li-in-nav"></li>
+
+                                <li class="dropdown"><a href="#">קשרי משקיעים</a>
+                                    <div class="dropdown-content">
+                                        <a href="#">פרופיל חברה</a>
+                                        <a href="#">דו"חות משקיעים</a>
+                                        <a href="#">כלים למשקיע</a>
+                                        <a href="#">נתוני מניה</a>
+                                        <a href="#">אסיפות כלליות</a>
+                                    </div>
+                                </li>
+
+                                <li class="li-in-nav"></li>
+
+                                <li class="dropdown"><a href="#">התחנות שלנו</a>
+                                    <div class="dropdown-content">
+                                        <a href="#">התחנות שלנו</a>
+                                        <a href="#">נגישות מתחמי פז</a>
+                                        <a href="#">רשימת תחנות</a>
+                                        <a href="#">מועדונים</a>
+                                    </div>
+                                </li>
+
+                                <li class="li-in-nav"></li>
+
+                                <li class="dropdown"><a href="#">קריירה</a>
+                                    <div class="dropdown-content">
+                                        <a href="#">לעבוד בפז</a>
+                                        <a href="#">ניהול תחנת פז</a>
+                                        <a href="#">קריירה</a>
+                                    </div>
+                                </li>
+
+                                <li class="li-in-nav"></li>
+
+                                <li class="dropdown"><a href="#">חדשות ומדיה</a>
+                                    <div class="dropdown-content">
+                                        <a href="#">פרסומות</a>
+                                        <a href="#">הודעות לעיתונות</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div> 
                 </div>
-                <nav>
-                    <ul class="flex-ul">
-                        <li class="dropdown"><a href="#"><img src="images/menu_home.png" alt="אתר הבית"></a>
-                        </li>
-
-                        <li class="dropdown"><a href="#">אודות</a>
-                            <div class="dropdown-content">
-                                <a href="#">אודות</a>
-                                <a href="#">היסטוריה</a>
-                                <a href="#">חזון וערכים</a>
-                                <a href="#">מבנה הקבוצה</a>
-                                <a href="#">חברי הדירקטוריון</a>
-                                <a href="#">הנהלת הקבוצה</a>
-                                <a href="#">פרסים והוקרה</a>
-                            </div>
-                        </li>
-
-                        <li class="dropdown"><a href="#">חטיבות</a>
-                            <div class="dropdown-content">
-                                <a href="#">חטיבות</a>
-                                <a href="#">קמעונאות ומסחר</a>
-                                <a href="#">תעשיות ושירותים</a>
-                                <a href="#">זיקוק</a>
-                            </div>
-                        </li>
-
-                        <li class="dropdown"><a href="#">אחריות תאגידית</a>
-                            <div class="dropdown-content">
-                                <a href="#">אחריות תאגידית</a>
-                                <a href="#">הקוד האתי</a>
-                                <a href="#">מעורבות חברתית</a>
-                                <a href="#">נגישות</a>
-                                <a href="#">איכות הסביבה ובטיחות</a>
-                                <a href="#">דירוג מעלה</a>
-                            </div>
-                        </li>
-
-
-                        <li class="dropdown"><a href="#">קשרי משקיעים</a>
-                            <div class="dropdown-content">
-                                <a href="#">פרופיל חברה</a>
-                                <a href="#">דו"חות משקיעים</a>
-                                <a href="#">כלים למשקיע</a>
-                                <a href="#">נתוני מניה</a>
-                                <a href="#">אסיפות כלליות</a>
-                            </div>
-                        </li>                        
-
-                        <li class="dropdown"><a href="#">התחנות שלנו</a>
-                            <div class="dropdown-content">
-                                <a href="#">התחנות שלנו</a>
-                                <a href="#">נגישות מתחמי פז</a>
-                                <a href="#">רשימת תחנות</a>
-                                <a href="#">מועדונים</a>
-                            </div>
-                        </li>
-
-
-
-                        <li class="dropdown"><a href="#">קריירה</a>
-                            <div class="dropdown-content">
-                                <a href="#">לעבוד בפז</a>
-                                <a href="#">ניהול תחנת פז</a>
-                                <a href="#">קריירה</a>
-                            </div>
-                        </li>
-
-
-                        <li class="dropdown"><a href="#">חדשות ומדיה</a>
-                            <div class="dropdown-content">
-                                <a href="#">פרסומות</a>
-                                <a href="#">הודעות לעיתונות</a>
-                            </div>
-                        </li>
-                    </ul>
-
-                </nav>
-
             </div>
-        </div>
-    </form>
-</body>
+        </form>
+    </body>
+</html>
