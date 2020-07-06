@@ -71,19 +71,23 @@
  
  
  nav > ul.flex-ul {display: flex;
+                   flex-wrap: wrap;
                    flex-direction: row;
                    justify-content: space-evenly;
-                   text-align: center;
+                   text-align: right;
                    position: absolute;
                    margin-right: 140px;
                    margin-top: 70px;
                    width: 780px;
      }
  
-/* nav > .flex-ul .dropdown-content {display: flex;
-                                  flex-direction: column;
-
-     } */
+nav > ul.flex-ul .dropdown-content {display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    background-image: url(/images/header_bg.png);
+                                    width: 110px;
+                                    background-color: #eee;
+    } 
  
  
 nav ul .li-in-nav {width: 4px;
@@ -92,33 +96,34 @@ nav ul .li-in-nav {width: 4px;
                    margin: 0 4.1px;
                    display: inline-block;
     }
- 
- 
+  
 .dropdown a {font-size: 15px;
              color: white;
+             padding: 2px;
+             display: block;
              text-decoration: none;
     }
 
 .flex-ul {list-style: none;}
 
-  input {text-rendering: auto;
-        color: black;
-        letter-spacing: normal;
-        word-spacing: normal;
-        text-transform: none;
-        text-indent: 0;
-        text-shadow: none;
-        display: inline-block;
-        text-align: start;
-        cursor: text;
-        font: 400 13.3333px Arial;
-        font-style: normal;
-        font-weight: 400;
-        font-stretch: normal;
-        line-height: normal;
-        position: absolute;
-        right: 730px;
-        top: 20px;
+input {text-rendering: auto;
+       color: black;
+       letter-spacing: normal;
+       word-spacing: normal;
+       text-transform: none;
+       text-indent: 0;
+       text-shadow: none;
+       display: inline-block;
+       text-align: start;
+       cursor: text;
+       font: 400 13.3333px Arial;
+       font-style: normal;
+       font-weight: 400;
+       font-stretch: normal;
+       line-height: normal;
+       position: absolute;
+       right: 730px;
+       top: 20px;
     }
  
 .input-search {position: absolute;
@@ -141,8 +146,32 @@ nav ul .li-in-nav {width: 4px;
     
     }
 
-#about:hover  {color:0040ff;
+#about:hover {color:#005CA0;
+              text-decoration: underline;
+    }
+
+#devision:hover {color:#005CA0;
+                 text-decoration: underline;
+    }
+
+#corporation:hover {color:#005CA0;
+                    text-decoration: underline;
+    }
+
+#investors:hover {color:#005CA0;
+                  text-decoration: underline;
+    }
+
+#stations:hover {color:#005CA0;
+                 text-decoration: underline;
+    }
+
+#career:hover {color:#005CA0;
                text-decoration: underline;
+    }
+
+#news:hover {color:#005CA0;
+             text-decoration: underline;
     }
 
 .dropdown {position: relative;
@@ -152,11 +181,14 @@ nav ul .li-in-nav {width: 4px;
                    position: absolute;
                    width: 100%;
                    top: 0;
-                   right: 100%;
-                   padding-top: 20px;
-                   height: 50px;
+                   left: -20px;
+                   margin-top: 35px;
     }
-       
 
-.dropdown:hover > .dropdown-content {display: inline-block;
+.dropdown div a:hover {color:#005CA0;
+                       text-decoration: underline;
+    }
+
+.dropdown:hover > .dropdown-content {display: block;
+                                     padding: 5px;
     }
