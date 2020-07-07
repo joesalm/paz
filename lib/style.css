@@ -21,6 +21,7 @@
  
  #header {width: 100%;
           height: 105px;
+          z-index: 10;
           position: relative;
           display: block;
           font-family: Arial, Helvetica, sans-serif;
@@ -146,14 +147,14 @@ input {text-rendering: auto;
 .dropdown {position: relative;
     }
 
-    .dropdown a {font-size: 15px;
+.dropdown a {font-size: 15px;
         color: white;
         padding: 10px;
         display: block;
         text-decoration: none;
 }
 
-    .dropdown-content {display: none;
+.dropdown-content {display: none;
                    position: absolute;
                    top: 35px;
                    right: 10px;
@@ -166,6 +167,7 @@ input {text-rendering: auto;
                      padding: 3px;
                      right: 4px;
     }
+.dropdown-content a:last-child {border-bottom: none;}
 
 .dropdown a:hover {color:#005CA0;
                    text-decoration: underline;
@@ -173,3 +175,201 @@ input {text-rendering: auto;
 
 .dropdown:hover > .dropdown-content {display: block;
     }
+
+.img-container div {display: inline-block;}
+
+.img-container {float: right;
+                max-width: 1000px;
+                width: 100%;
+                padding: 6px;
+                margin-top: 23px;
+                position: absolute;
+    }
+
+.clearfix::after {content: "";
+                  clear: both;
+                  display: table;
+    }
+
+.r1 > .c1, .r1 > .c2, .r1 > .c3 {position: relative;
+                                 z-index: 5;
+                                 width: 293px;
+                                 height: 355px;
+                                 float: right;
+    }
+
+.overlay {position: absolute;
+          top: 0;
+          right: 0;}
+
+.text {width: 228px;
+       height: 95px;
+       overflow: hidden;
+       padding: 10px;
+       position: absolute;
+       left: 55px;
+       bottom: 6px;
+       color: #fff;
+       background: url(/images/hp_tab_text_bg.png) no-repeat 0 0;
+       border-bottom-right-radius: 20px;
+       /* from some readon the edge in the image file doesn't appear... */
+              
+       /* background: url(/images/hp_tab_overlay.png) no-repeat 0 0; */
+       /* background-image: url(/images/hp_tab_text_bg.png) no-repeat 0 0; */
+    }
+
+.text > p {font-size: 12px;
+           margin-top: 4px;
+        }
+
+h1, h2, h3, h4, h5, h6 {font-weight: normal;
+                        font-size: 100%;
+    }
+
+h3 {margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    }    
+
+.text h3 {font-size: 14px;
+          font-weight: bold;
+          display: block;
+    }
+
+.text .read-more .white{float: left;
+                        color: #fff;
+                        position: relative;
+                        bottom: 4px;
+    }
+
+/* .read-more .white {background: url(/images/read_more_white.png) no-repeat left center;
+    } */
+
+a.read-more > span {padding-left: 12px;
+                    font-size: 12px;
+                    color: blue;
+                    text-decoration: underline;
+                    cursor: pointer;
+                    padding-left: 11px;
+                    margin-right: 150px;
+                    background: url(/images/read_more_white.png) no-repeat;
+    }
+
+/* a.read-more > span::after {bacgkround-image url(/images/read_more_yel.png)} */
+
+a.read-more > span:hover {cursor: pointer;
+                          /* color: #005CA0; */
+
+                          background: url(/images/read_more_yellow.png) no-repeat;
+                          /* had no read_more_blue.png file , pardon me...*/
+    }
+
+
+.locations div a:hover, #span3:hover  {cursor: pointer;
+                             background: url(/images/read_more_white.png) no-repeat;
+        /* had no read_more_blue.png file , pardon me...*/
+    }
+
+.r1 > .c1, .r1 > .c2, .r1 > .c3 {margin-left: 10px;
+                                 margin-bottom: 18px;}
+
+.r2 > .c1, .r2 > .c2, .r2 > .c3 {margin-left: 6px;
+                                 margin-bottom: 18px;}
+
+.r1:after {content: "";
+           display: block;
+           height: 0;
+           clear: both;
+           /* visibility: hidden; */
+    }
+
+.s-cube {position: relative;
+         float: right;
+         margin-right: -17px;
+         width: 310px;
+         padding: 0 14px;
+         height: 210px;
+         background: url(/images/small_cube_bg.png) no-repeat 0 0;
+         color: black
+         /* color: #575757; */
+    }
+
+.s-cube h3 {right: 3px;
+            position: relative;
+            height: 34px;
+            line-height: 34px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+    }
+
+#img1 {padding-right: 25px;
+    }
+
+#img2 {position: relative;
+       bottom: 12px;
+       right: 210px;
+    }
+    
+
+#span2 {padding-right: 25px;
+        position: relative;
+        left: -15px;
+        top: 20px;
+    }
+
+#h3-right-align {position: relative;
+                 right: -50px;
+    }
+
+.locations {display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            position: relative;
+            top: -150px;
+            right: 30px;
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+    }
+
+.locations a {line-height: 20px;
+              padding-bottom: 10px
+    }
+
+.locations a:hover img {background: url(/image/read_more_blue);
+    }
+
+#fixed-footer {position: fixed;
+               display: inline-block;
+               width: 100%;
+               height: 38px;
+               z-index: 9999;
+               bottom: 0;
+               background: url(/images/footer_bg.png) repeat-x 0 0;
+    }
+
+#fixed-footer ul, #fixed-footer ul li  {list-style: none;
+                                        display: inline-block;
+    }
+
+#fixed-footer a {text-decoration: none;
+                 color: white;
+                 font-size: 14px;                 
+    }
+
+#fixed-footer > .container > div.menu {display: flex;
+                                       flex-direction: row;
+                                       width 900px;
+                                       justify-content: center;
+    }
+
+sep {color: white
+    }
+
+ #arrangment {color: red !important;
+    }
+
+    #fixed-footer > .container > div.menu > ul > li > a:hover {color: #005CA0 !important;
+    text-decoration: underline;}
