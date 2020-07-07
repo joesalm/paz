@@ -30,7 +30,7 @@
           background-position-y: top;
           background-size: initial;
           background-repeat: repeat-x;
-          overflow: visible;
+          /* overflow: visible; */
          }
  
  #header > div > a.logo {display: block;
@@ -45,14 +45,14 @@
     }
  
  #header div .search-box #dd {display: inline-block;
-                          width: 19px;
-                          height: 19px;
-                          position: absolute;
-                          left: -5px;
-                          top: 20px;
-                          background: url(/images/search_button.png);
-                          border: black;
-     }
+                              width: 19px;
+                              height: 19px;
+                              position: absolute;
+                              left: -5px;
+                              top: 20px;
+                              background: url(/images/search_button.png);
+                              border: black;
+    }
  
  #header div #search-box .input-search-box #input-search-box input {position: relative;
                                                                     top: 2px;
@@ -64,10 +64,10 @@
  
  input, textarea, select {font-family: arial;
                           font-size: 12px;
-     }
+    }
  
  #li-home {width: 17px;
-     }
+    }
  
  
  nav > ul.flex-ul {display: flex;
@@ -81,14 +81,17 @@
                    width: 780px;
      }
  
-nav > ul.flex-ul .dropdown-content {display: flex;
+/* nav > ul.flex-ul .dropdown-content {display: flex;
                                     flex-direction: column;
                                     align-items: flex-start;
                                     background-image: url(/images/header_bg.png);
                                     width: 110px;
                                     background-color: #eee;
-    } 
- 
+    }  */
+
+/* nav > ul.flex-ul .dropdown-content > a {display: block;
+                                        padding: 5px;
+    } */
  
 nav ul .li-in-nav {width: 4px;
                    height: 21px;
@@ -97,12 +100,6 @@ nav ul .li-in-nav {width: 4px;
                    display: inline-block;
     }
   
-.dropdown a {font-size: 15px;
-             color: white;
-             padding: 2px;
-             display: block;
-             text-decoration: none;
-    }
 
 .flex-ul {list-style: none;}
 
@@ -146,49 +143,33 @@ input {text-rendering: auto;
     
     }
 
-#about:hover {color:#005CA0;
-              text-decoration: underline;
-    }
-
-#devision:hover {color:#005CA0;
-                 text-decoration: underline;
-    }
-
-#corporation:hover {color:#005CA0;
-                    text-decoration: underline;
-    }
-
-#investors:hover {color:#005CA0;
-                  text-decoration: underline;
-    }
-
-#stations:hover {color:#005CA0;
-                 text-decoration: underline;
-    }
-
-#career:hover {color:#005CA0;
-               text-decoration: underline;
-    }
-
-#news:hover {color:#005CA0;
-             text-decoration: underline;
-    }
-
 .dropdown {position: relative;
     }
 
-.dropdown-content {display: none;
+    .dropdown a {font-size: 15px;
+        color: white;
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+}
+
+    .dropdown-content {display: none;
                    position: absolute;
-                   width: 100%;
-                   top: 0;
-                   left: -20px;
-                   margin-top: 35px;
+                   top: 35px;
+                   right: 10px;
     }
 
-.dropdown div a:hover {color:#005CA0;
-                       text-decoration: underline;
+.dropdown-content a {/*display: block;*/
+                     background: #fff url(/images/header_bg.png) repeat-x center top;
+                     border-bottom: 1px solid whitesmoke;
+                     white-space: nowrap;
+                     padding: 3px;
+                     right: 4px;
+    }
+
+.dropdown a:hover {color:#005CA0;
+                   text-decoration: underline;
     }
 
 .dropdown:hover > .dropdown-content {display: block;
-                                     padding: 5px;
     }
